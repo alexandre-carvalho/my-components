@@ -3,19 +3,15 @@
  */
 import React from 'react';
 import './index.scss';
-import Space from '../../components/effects/space';
 import Particles from '../../components/effects/particles';
-import Waves from '../../components/effects/waves';
-import Connections from '../../components/effects/connections/';
+import Teste from '../../components/effects/teste';
 
 const Home = () => {
     return (
         <div className="banner">
             <div className="children">
-                {/* <Space /> */}
                 {/* <Particles /> */}
-                {/* <Waves /> ERRO */}
-                <Connections />
+                <Teste />
             </div>
         </div>
     )

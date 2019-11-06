@@ -18,7 +18,7 @@ const Particles = () => {
        */
     const config = {
         showCube: false,
-        dimension: "3D",
+        dimension: "2D",
         velocity: 2.0,
         boundaryType: "bounce",
         antialias: true,
@@ -43,8 +43,8 @@ const Particles = () => {
             colorMode: "solid",
             color: "#3FB568",
             transparency: 0.9,
-            shape: "square",
-            // shape: "circle",
+            // shape: "square",
+            shape: "circle",
             boundingBox: "canvas",
             count: 50,
             minSize: 50,
