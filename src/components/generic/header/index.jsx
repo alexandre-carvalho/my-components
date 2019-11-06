@@ -15,7 +15,7 @@ const HeaderComponent = () => {
     //Navegação para menu inicial a partir da imagem de logo DSB
     const home = [
         {
-            link: '/home',
+            link: '/',
             image: 'logo-dsb.png'
         },
     ]
@@ -24,7 +24,7 @@ const HeaderComponent = () => {
     const menu = [
         {
             text: "Home",
-            link: '/home'
+            link: '/'
         },
     ]
 
@@ -37,9 +37,10 @@ const HeaderComponent = () => {
                     home.map(item => <a href={item.link} onClick={navigate(item.link)}><img src={require(`./img/${item.image}`)} alt="" /></a>)
                 }
                 <nav className="menu">
-                    {/* { <Toggle />
-                        // menu.map(item => <a key={item.text} href={item.link} onClick={navigate(item.link)}>{item.text}</a>)
-                    } */}
+                    {
+                        //{ <Toggle />
+                        menu.map(item => <a key={item.text} href={item.link} onClick={navigate(item.link)}>{item.text}</a>)
+                    }
                 </nav>
             </div>
         </header>
