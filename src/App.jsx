@@ -4,7 +4,7 @@
 import React from 'react';
 import { Provider } from "react-redux";
 import './assets/reset.css';
-import './assets/index.css';
+import './assets/App.css';
 import { store } from './redux/store';
 
 import Header from './components/generic/header';

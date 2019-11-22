@@ -16,7 +16,7 @@ const HeaderComponent = () => {
     const home = [
         {
             link: '/',
-            image: 'logo-dsb.png'
+            image: 'logo.png'
         },
     ]
 
@@ -34,7 +34,7 @@ const HeaderComponent = () => {
         <header className="header">
             <div className="children">
                 {
-                    home.map(item => <a href={item.link} onClick={navigate(item.link)}><img src={require(`./img/${item.image}`)} alt="" /></a>)
+                    home.map(item => <a href={item.link} onClick={navigate(item.link)}><img className="logo" src={require(`./img/${item.image}`)} alt="" /></a>)
                 }
                 <nav className="menu">
                     {
