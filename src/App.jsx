@@ -7,7 +7,7 @@ import './assets/reset.css';
 import './assets/App.css';
 import { store } from './redux/store';
 
-import Header from './components/generic/header';
+import Header from './components/generics/header';
 import Routes from './routes';
 
 function App() {
