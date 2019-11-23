@@ -26,6 +26,18 @@ const HeaderComponent = () => {
             text: "Home",
             link: '/'
         },
+        {
+            text: "Option 2",
+            link: '#'
+        },
+        {
+            text: "Option 3",
+            link: '#'
+        },
+        {
+            text: "Option 4",
+            link: '#'
+        }
     ]
 
     const navigate = (link) => () => dispatch(push(`/${link}`));
