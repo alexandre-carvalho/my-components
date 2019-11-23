@@ -3,33 +3,33 @@ import './index.scss';
 import Carousel from './carousel';
 
 const Slides = () => {
-    const images = [
+    const slides = [
         [
             {
-                img: "img-a.png",
+                img: "img.png",
             },
             {
-                img: "img-b.png",
+                img: "img.png",
             },
             {
-                img: "img-c.png",
+                img: "img.png",
             },
             {
-                img: "img-d.png",
+                img: "img.png",
             }
         ],
         [
             {
-                img: "img-e.png",
+                img: "img2.png",
             },
             {
-                img: "img-f.png",
+                img: "img2.png",
             },
             {
-                img: "img-g.png",
+                img: "img2.png",
             },
             {
-                img: "img-h.png",
+                img: "img2.png",
             }
         ],
     ].map(item => item.map(({ img }) => ({ img: require(`./images/${img}`) })))
@@ -38,7 +38,7 @@ const Slides = () => {
         <section className="slides">
             <div className="slides-children">
                 <div className="itens">
-                    <Carousel images={images} />
+                    <Carousel slides={slides} />
                 </div>
             </div>
         </section>

@@ -45,13 +45,13 @@ span {
 }
 
 .next {
-    background: url(./carousel-img/seta2.png) no-repeat;
+    background: url(./images/seta2.png) no-repeat;
     right: 5px;
 }
 
 
 .prev {
-    background: url(./carousel-img/seta1.png) no-repeat;
+    background: url(./images/seta1.png) no-repeat;
     left: 5px;
 }
 
