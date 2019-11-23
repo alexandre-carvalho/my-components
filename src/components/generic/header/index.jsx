@@ -38,9 +38,11 @@ const HeaderComponent = () => {
                 }
                 <nav className="menu">
                     {
-                        //{ <Toggle />
                         menu.map(item => <a key={item.text} href={item.link} onClick={navigate(item.link)}>{item.text}</a>)
                     }
+                </nav>
+                <nav className="toggle">
+                    <Toggle />
                 </nav>
             </div>
         </header>

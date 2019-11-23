@@ -1,37 +1,53 @@
+/**
+ * Componente do hamburguer menu (toggle)
+ */
 import React from 'react';
 import './index.css';
+import { push } from 'connected-react-router';
+import { useDispatch } from "react-redux";
 
 const Toggle = () => {
+    const dispatch = useDispatch();
+
+    //Navegação para menu a partir da lista do header
+    const menu = [
+        {
+            text: "Home",
+            link: '/'
+        },
+        {
+            text: "Option 2",
+            link: '#'
+        },
+        {
+            text: "Option 3",
+            link: '#'
+        },
+        {
+            text: "Option 4",
+            link: '#'
+        },
+    ]
+
+    const navigate = (link) => () => dispatch(push(`/${link}`));
 
     return (
-        //         <!--    Made by Erik Terwan    -->
-        // <!--   24th of November 2015   -->
-        // <!--        MIT License        -->
         <nav role="navigation">
             <div id="menuToggle">
-                {/* <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    --> */}
+                {/*A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.*/}
                 <input type="checkbox" />
 
-                {/* <!--
-    Some spans to act as a hamburger.
-    --> */}
+                {/*Some spans to act as a hamburger.*/}
                 <span></span>
                 <span></span>
                 <span></span>
 
-                {/* <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    --> */}
+                {/*Options*/}
                 <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                    {
+                        menu.map(item => <a key={item.text} href={item.link} onClick={navigate(item.link)}><li>{item.text}</li></a>)
+                    }
                 </ul>
             </div>
         </nav>
