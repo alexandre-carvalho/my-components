@@ -37,13 +37,13 @@ span {
 }
 
 .next {
-    background: url(./images/next-smartphone.png) no-repeat;
+    background: url(./images/next.svg) no-repeat;
     right: 0px;
 }
 
 
 .prev {
-    background: url(./images/prev-smartphone.png) no-repeat;
+    background: url(./images/before.svg) no-repeat;
     left: 0px;
 }
 
