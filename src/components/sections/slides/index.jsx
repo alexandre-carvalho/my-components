@@ -13,15 +13,9 @@ const Slides = () => {
             },
             {
                 img: "img.png",
-            },
-            {
-                img: "img.png",
             }
         ],
         [
-            {
-                img: "img2.png",
-            },
             {
                 img: "img2.png",
             },
