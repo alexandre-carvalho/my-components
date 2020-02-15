@@ -31,7 +31,7 @@
     "stats-js": "^1.0.1",
     "styled-components": "^4.4.0",
     "three": "^0.110.0",
-    "yarn": "^1.19.1"
+    "yarn": "^1.22.0"
   },
   "scripts": {
     "start": "react-scripts start",
