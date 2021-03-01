@@ -30,7 +30,7 @@
     "sass": "^1.23.0",
     "stats-js": "^1.0.1",
     "styled-components": "^4.4.0",
-    "three": "^0.110.0",
+    "three": "^0.125.0",
     "yarn": "^1.19.1"
   },
   "scripts": {
